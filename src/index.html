@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/index.scss">
+    <script defer="true" src="app.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Hello Parcel</h1>
-    </header>
-    <main></main>
-    <footer></footer>
+    <button id="frontBtn" class="frontBtn">add face</button>
+    <div class="scene">
+        <div class="cube" id="cube">
+            <div class="cube__face cube__back"></div>
+            <div class="cube__face cube__front"></div>
+            <div class="cube__face cube__top"></div>
+            <div class="cube__face cube__bottom"></div>
+            <div class="cube__face cube__right"></div>
+            <div class="cube__face cube__left"></div>
+        </div>
+    </div>
 </body>
 </html>

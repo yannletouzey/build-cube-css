@@ -1,1 +1,19 @@
 @use '../var';
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(126, 77, 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 20rem;
+    overflow: hidden;
+}
+.frontBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+}
