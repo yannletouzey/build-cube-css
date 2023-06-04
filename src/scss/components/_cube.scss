@@ -35,7 +35,6 @@
     &__left{
         background-color: grey;
     }
-// animation: name duration timing-function delay iteration-count direction fill-mode;
     animation: spin 3s ease-out 34500ms forwards;
     @keyframes spin {
         0%{
