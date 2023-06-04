@@ -9,13 +9,7 @@ const faceLeft = document.querySelector('.cube__left')
 const faces = document.querySelectorAll('.cube__face')
 frontBtn.addEventListener('click', () => {
     frontBtn.style.display = 'none'
-    faces.forEach(f => {
-        setTimeout(() => {
-            f.style.opacity = 0.7
-            f.style.border = "2px solid #000"
-            f.style.boxShadow = "inset 0px 0px 37px 13px rgba(0,0,0,0.95)";
-        }, 33000);
-    })
+    
 
     cube.style.transform = "rotateY(-25deg) rotateX(-15deg)"
 
@@ -105,5 +99,12 @@ frontBtn.addEventListener('click', () => {
         setTimeout(() => {
             faceLeft.style.opacity = 0.2;
         }, 2000)
+        faces.forEach(f => {
+            setTimeout(() => {
+                f.style.opacity = 0.7
+                f.style.border = "2px solid #000"
+                f.style.boxShadow = "inset 0px 0px 37px 13px rgba(0,0,0,0.95)";
+            }, 3000);
+        })
     }, 30000);
 })
