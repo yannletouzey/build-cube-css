@@ -35,7 +35,7 @@
     &__left{
         background-color: grey;
     }
-    animation: spin 3s ease-out 34500ms forwards;
+    animation: spin 3s ease-out 3500ms forwards;
     @keyframes spin {
         0%{
             transform: rotateY(-35deg) rotateX(-35deg);
