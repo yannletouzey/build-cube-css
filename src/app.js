@@ -140,6 +140,7 @@ frontBtn.addEventListener('click', (e) => {
 })
 backBtn.addEventListener('click', (e) => {   
     e.preventDefault()
+    backBtn.style.display = 'none'
     scaleAndRadius(faceBack)
     setTimeout(() => {
         faceBack.style.transform = "translateZ(-5rem)";
@@ -153,6 +154,7 @@ backBtn.addEventListener('click', (e) => {
 })
 topBtn.addEventListener('click', (e) => {   
     e.preventDefault()
+    topBtn.style.display = 'none'
     scaleAndRadius(faceTop)
     setTimeout(() => {
         faceTop.style.transform = "translateY(-5rem)";
@@ -169,6 +171,7 @@ topBtn.addEventListener('click', (e) => {
 })
 bottomBtn.addEventListener('click', (e) => {   
     e.preventDefault()
+    bottomBtn.style.display = 'none'
     scaleAndRadius(faceBottom)
     setTimeout(() => {
         faceBottom.style.transform = "translateY(5rem)";
@@ -185,6 +188,7 @@ bottomBtn.addEventListener('click', (e) => {
 })
 rightBtn.addEventListener('click', (e) => {   
     e.preventDefault()
+    rightBtn.style.display = 'none'
     scaleAndRadius(faceRight)
     setTimeout(() => {
         faceRight.style.transform = "translateX(-5rem)";
@@ -201,6 +205,7 @@ rightBtn.addEventListener('click', (e) => {
 })
 leftBtn.addEventListener('click', (e) => {   
     e.preventDefault()
+    leftBtn.style.display = 'none'
     scaleAndRadius(faceLeft)
     setTimeout(() => {
         faceLeft.style.transform = "translateX(5rem)";
