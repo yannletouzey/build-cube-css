@@ -35,13 +35,13 @@
     &__left{
         background-color: grey;
     }
-    animation: spin 2s ease-out 35000ms forwards;
-    @keyframes spin {
-        0%{
-            transform: rotateY(-35deg) rotateX(-35deg);
-        }
-        100%{
-            transform: rotateY(-755deg) rotateX(-395deg);
-        }
-    }
+    // animation: spin 2s ease-out 35000ms forwards;
+    // @keyframes spin {
+    //     0%{
+    //         transform: rotateY(-35deg) rotateX(-35deg);
+    //     }
+    //     100%{
+    //         transform: rotateY(-755deg) rotateX(-395deg);
+    //     }
+    // }
 }

@@ -11,9 +11,50 @@ body{
     perspective: 20rem;
     overflow: hidden;
 }
-.frontBtn{
+.btn{
     position: absolute;
     top: 0;
     left: 0;
     margin: 2rem;
+}
+.frontBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 4rem 2rem;
+}
+.backBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 4rem 2rem;
+    display: none;
+}
+.topBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 4rem 2rem;
+    display: none;
+}
+.bottomBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 4rem 2rem;
+    display: none;
+}
+.rightBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 4rem 2rem;
+    display: none;
+}
+.leftBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 4rem 2rem;
+    display: none;
 }
