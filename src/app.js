@@ -1,3 +1,4 @@
+import confetti from 'canvas-confetti'
 const cube = document.getElementById('cube')
 const btn = document.getElementById('btn')
 const frontBtn = document.getElementById('frontBtn')
@@ -109,6 +110,9 @@ function leftFace() {
                 f.style.border = "2px solid #000"
                 f.style.boxShadow = "inset 0px 0px 37px 13px rgba(0,0,0,0.95)";
                 cube.style.transform = "rotateY(-755deg) rotateX(-35deg)"
+                setTimeout(() => {
+                    confetti()
+                }, 1000);
             }, 3000);
         })
     }, 30000);
@@ -135,6 +139,7 @@ frontBtn.addEventListener('click', (e) => {
         setTimeout(() => {
             faceFront.style.opacity = 0.2;
             backBtn.style.display = 'block'
+            confetti()
         }, 2000)
     }, 2000);
 })
@@ -149,6 +154,7 @@ backBtn.addEventListener('click', (e) => {
             cube.style.transitionDuration = "1s"
             cube.style.transform = "rotateY(-35deg) rotateX(-25deg)"
             topBtn.style.display = 'block'
+            confetti()
         }, 2000)
     }, 2000);
 })
@@ -166,6 +172,7 @@ topBtn.addEventListener('click', (e) => {
             cube.style.transitionDuration = "1s"
             cube.style.transform = "rotateY(35deg) rotateX(35deg)"
             bottomBtn.style.display = 'block'
+            confetti()
         }, 2000)
     }, 4000);
 })
@@ -183,6 +190,7 @@ bottomBtn.addEventListener('click', (e) => {
             cube.style.transitionDuration = "1s"
             cube.style.transform = "rotateY(35deg) rotateX(-35deg)"
             rightBtn.style.display = 'block'
+            confetti()
         }, 2000)
     }, 4000);
 })
@@ -200,6 +208,7 @@ rightBtn.addEventListener('click', (e) => {
             cube.style.transitionDuration = "1s"
             cube.style.transform = "rotateY(-35deg) rotateX(-35deg)"
             leftBtn.style.display = 'block'
+            confetti()
         }, 2000)
     }, 4000);
 })
@@ -219,7 +228,9 @@ leftBtn.addEventListener('click', (e) => {
                 f.style.border = "2px solid #000"
                 f.style.boxShadow = "inset 0px 0px 37px 13px rgba(0,0,0,0.95)";
                 cube.style.transform = "rotateY(-755deg) rotateX(-35deg)"
+            confetti()
             }, 3000);
         })
+            confetti()
     }, 4000);
 })
